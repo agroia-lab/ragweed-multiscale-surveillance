@@ -1,0 +1,8 @@
+# Sample of the alberto test split (single class). See data/README.md.
+path: data/sample_cl_alberto
+train: images
+val: images
+test: images
+nc: 1
+names:
+  0: AMBEL

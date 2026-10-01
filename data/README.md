@@ -1,6 +1,16 @@
-# Data sample
+# Data samples
 
-`data/sample/` contains 12 RGB images (2048×2048 px) with YOLO-format bounding-box labels, for smoke tests and inference demos. It is not meant for training.
+Three small samples with YOLO-format bounding-box labels, for smoke tests and inference demos. They are not meant for training.
+
+| Folder | Source dataset (as named in the preprint) | Images | Classes |
+|---|---|---:|---|
+| `data/sample/` | Drone, 4 classes (Roboflow `merge-2to11` v5) | 12 | AMBEL, LENCU, POLAV, POLPE |
+| `data/sample_cl_seba/` | CL_Seba (640×640, test split) | 12 | AMBEL |
+| `data/sample_cl_alberto/` | CL_Alberto (1344×1008, test split) | 8 | AMBEL |
+
+## Drone sample (`data/sample/`)
+
+`data/sample/` contains 12 RGB images (2048×2048 px).
 
 ## Provenance
 
@@ -38,6 +48,16 @@ Images were split into three groups (terciles) by their number of AMBEL boxes, a
 
 Box counts are taken from the label files in `data/sample/labels/`.
 
+## Chilean field samples (`data/sample_cl_seba/`, `data/sample_cl_alberto/`)
+
+Images from the two Chilean ragweed datasets used for single-site and multi-domain training in the preprint, both collected by INIA Quilamapu in Santa Rosa fields in 2023 and annotated with a single class (0 = AMBEL, *Ambrosia artemisiifolia*).
+
+- **CL_Seba:** 640×640 px; the full dataset has 1,450 / 411 / 204 images (train / valid / test). The sample has 12 test images.
+- **CL_Alberto:** 1344×1008 px, from a different Santa Rosa field; the full dataset has 576 / 55 / 28 images. The sample has 8 test images.
+- **Licence:** CC BY 4.0 (`data/LICENSE`).
+
+**Selection criterion (reproducible):** test images were sorted by number of boxes per image and split into terciles; images were drawn from each tercile with random seed 42 (CL_Seba 4 + 4 + 4; CL_Alberto 3 + 3 + 2). Box counts per image: CL_Seba 1–15, CL_Alberto 1–6.
+
 ## Privacy
 
 All EXIF/XMP metadata, including any GPS tags, was removed from the copies in this repository (`exiftool -all=`). `exiftool -gps:all -r data examples` returns no GPS tags.
@@ -48,10 +68,12 @@ All EXIF/XMP metadata, including any GPS tags, was removed from the copies in th
 data/
 ├── LICENSE          CC BY 4.0 legal code
 ├── README.md
-└── sample/
-    ├── data.yaml    Ultralytics dataset file (path: data/sample)
-    ├── images/      12 × .jpg
-    └── labels/      12 × .txt (YOLO: class cx cy w h, normalised)
+├── sample/              drone, 4 classes
+│   ├── data.yaml        Ultralytics dataset file (path: data/sample)
+│   ├── images/          12 × .jpg
+│   └── labels/          12 × .txt (YOLO: class cx cy w h, normalised)
+├── sample_cl_seba/      CL_Seba, 1 class (data.yaml, 12 images + labels)
+└── sample_cl_alberto/   CL_Alberto, 1 class (data.yaml, 8 images + labels)
 ```
 
 Other datasets are not redistributed. Place them under `data/` as described in the main `README.md` and in the header of each script.

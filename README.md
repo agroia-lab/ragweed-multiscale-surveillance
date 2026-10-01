@@ -13,7 +13,7 @@ Climate change is reshaping weed population dynamics, creating non-stationary ma
 
 ## What this repository contains
 
-This repository holds the **original scripts that produced the results reported in the preprint**, organised by workflow stage, plus a 12-image annotated sample for smoke tests.
+This repository holds the **original scripts that produced the results reported in the preprint**, organised by workflow stage, plus small annotated image samples (32 images) for smoke tests.
 
 **How it relates to [`agroia-lab/ragweed-ai-toolkit`](https://github.com/agroia-lab/ragweed-ai-toolkit).** That repository (MIT) is a February 2026 refactor of these methods into an installable Python package. This repository is the analysis code as it was run for the preprint. Paths were turned into command-line arguments or repository-relative defaults; the scientific logic was not changed. Use the toolkit to adapt the methods to new species or sites, and use this repository to inspect or reproduce the preprint's analysis.
 
@@ -153,7 +153,11 @@ Versions marked `# version not pinned in the original run` in `requirements.txt`
 
 ## Data
 
-**Included: `data/sample/`.** Twelve 2048×2048 images with YOLO labels for four classes (AMBEL, LENCU, POLAV, POLPE), from a public Roboflow export, licensed CC BY 4.0. EXIF metadata was removed. Provenance and selection criteria are in `data/README.md`.
+**Included (CC BY 4.0, EXIF metadata removed; provenance and selection criteria in `data/README.md`):**
+
+- `data/sample/`: twelve 2048×2048 drone images with YOLO labels for four classes (AMBEL, LENCU, POLAV, POLPE), from a public Roboflow export.
+- `data/sample_cl_seba/`: twelve test images from CL_Seba (single class, AMBEL).
+- `data/sample_cl_alberto/`: eight test images from CL_Alberto (single class, AMBEL).
 
 **Included: `examples/106_DJI_0389_comparison.jpg`.** A drone image from the Santa Rosa lentil paddock (left) next to the SAHI detections on it (right; slice 2048, 1,570 detections). EXIF metadata was removed.
 
@@ -191,7 +195,7 @@ This work was funded by the Fundación para la Innovación Agraria (FIA) and the
 ## License
 
 - **Code:** GNU AGPL-3.0-or-later (`LICENSE`). Copyright (C) 2026 Instituto de Investigaciones Agropecuarias (INIA), Chile.
-- **Data sample** (`data/sample/`): CC BY 4.0 (`data/LICENSE`).
+- **Data samples** (`data/sample*/`): CC BY 4.0 (`data/LICENSE`).
 - **Example panel** (`examples/`): CC BY 4.0, like the data sample.
 
 ## Contact

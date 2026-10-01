@@ -8,8 +8,10 @@ __pycache__/
 .env
 *_original
 
-# Local datasets go under data/; only the sample and its docs are tracked
+# Local datasets go under data/; only the samples and their docs are tracked
 data/*
 !data/README.md
 !data/LICENSE
 !data/sample/
+!data/sample_cl_seba/
+!data/sample_cl_alberto/
