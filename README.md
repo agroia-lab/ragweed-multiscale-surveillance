@@ -1,5 +1,7 @@
 # From Plant Detection to Satellite Mapping: A Multi-Scale AI Toolkit for Ragweed Surveillance under Climate Change
 
+[![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23082720.svg)](https://doi.org/10.5281/zenodo.23082720)
+
 Code and a small data sample for the preprint:
 
 > León Gutiérrez LF, Ramírez C, Henríquez A, Contreras S (2026). *From Plant Detection to Satellite Mapping: A Multi-Scale AI Toolkit for Ragweed Surveillance under Climate Change.* bioRxiv. https://doi.org/10.64898/2026.09.28.755009
@@ -153,7 +155,9 @@ Versions marked `# version not pinned in the original run` in `requirements.txt`
 
 ## Data
 
-**Included (CC BY 4.0, EXIF metadata removed; provenance and selection criteria in `data/README.md`):**
+**Full Chilean datasets (Zenodo):** CL_Seba (2,065 images), CL_Alberto (659) and the four-class drone dataset (1,870), in YOLO format, CC BY 4.0 — https://doi.org/10.5281/zenodo.23082720. The archives are stored in 80 MB parts; the record's `DATASET_README.md` explains how to join and verify them.
+
+**Included in this repository (CC BY 4.0, EXIF metadata removed; provenance and selection criteria in `data/README.md`):**
 
 - `data/sample/`: twelve 2048×2048 drone images with YOLO labels for four classes (AMBEL, LENCU, POLAV, POLPE), from a public Roboflow export.
 - `data/sample_cl_seba/`: twelve test images from CL_Seba (single class, AMBEL).
@@ -167,7 +171,7 @@ Versions marked `# version not pinned in the original run` in `requirements.txt`
 - **Weed-crop dataset in precision agriculture** (Mendeley Data): https://doi.org/10.17632/mthv4ppwyw.2
 - **ND Individual** and **ND Aerial** (ImageWeeds, North Dakota), **Purdue 4Weed**, **WeedCube (USDA)**: see original sources.
 
-Place them under `data/international_databases/` following the layout in `scripts/01_data/configs/international_databases.yaml`. The Chilean training sets, field photographs, orthomosaics, Sentinel clips and kriging surfaces are not distributed. Each script documents the inputs it expects in its header.
+Place them under `data/international_databases/` following the layout in `scripts/01_data/configs/international_databases.yaml`. Field photographs, orthomosaics, Sentinel clips and kriging surfaces are not distributed. Each script documents the inputs it expects in its header.
 
 **Kriging.** Weed-density surfaces were interpolated by ordinary kriging in SmartMap (CENIA, Chile). That software is not part of this repository. The satellite scripts read its exported grids (`1_Krig_<SPECIES>_Grid_Map.tiff`, `0_Dados.csv`).
 
@@ -183,6 +187,14 @@ Place them under `data/international_databases/` following the layout in `script
   year    = {2026},
   doi     = {10.64898/2026.09.28.755009},
   url     = {https://www.biorxiv.org/content/10.64898/2026.09.28.755009v1}
+}
+
+@dataset{leongutierrez2026ragweed_data,
+  title     = {Ragweed (Ambrosia artemisiifolia) image datasets from central Chile for YOLO detection: CL_Seba, CL_Alberto and a four-class drone dataset},
+  author    = {Le{\'o}n Guti{\'e}rrez, Lorenzo F. and Ram{\'i}rez, Cristofer and Henr{\'i}quez, Alejandra and Contreras, Sebasti{\'a}n},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.23082720}
 }
 ```
 
