@@ -3,6 +3,8 @@ message: "If you use this code, please cite the preprint below."
 title: "ragweed-multiscale-surveillance: code and data sample for the ragweed multi-scale surveillance preprint"
 type: software
 license: AGPL-3.0-or-later
+doi: "10.5281/zenodo.23086086"
+repository-code: "https://github.com/agroia-lab/ragweed-multiscale-surveillance"
 authors:
   - family-names: "León Gutiérrez"
     given-names: "Lorenzo F."

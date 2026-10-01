@@ -1,5 +1,6 @@
 # From Plant Detection to Satellite Mapping: A Multi-Scale AI Toolkit for Ragweed Surveillance under Climate Change
 
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23086086.svg)](https://doi.org/10.5281/zenodo.23086086)
 [![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23082720.svg)](https://doi.org/10.5281/zenodo.23082720)
 
 Code and a small data sample for the preprint:
