@@ -1,0 +1,49 @@
+# Conda environment for the ragweed multi-scale surveillance scripts.
+# Versions are those used for the preprint runs, except where marked
+# "# version not pinned in the original run".
+# The PRESTO extraction (WorldCereal) needs a separate Python 3.11 environment;
+# see requirements.txt and scripts/06_satellite/extract_presto_embeddings.py.
+name: ragweed-multiscale
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.16
+  - pip
+  - pip:
+      - torch==2.4.1
+      - torchvision==0.19.1
+      - ultralytics==8.3.49
+      - sahi==0.11.19
+      - numpy==1.26.4
+      - scipy==1.14.1
+      - scikit-learn==1.6.0
+      - umap-learn==0.5.11
+      - opencv-python==4.9.0.80
+      - shapely==2.0.6
+      - rasterio==1.4.3
+      - plotly==6.5.2
+      - pandas  # version not pinned in the original run
+      - pillow  # version not pinned in the original run
+      - pillow-heif  # version not pinned in the original run
+      - piexif  # version not pinned in the original run
+      - exifread  # version not pinned in the original run
+      - geopandas  # version not pinned in the original run
+      - fiona  # version not pinned in the original run
+      - pyproj  # version not pinned in the original run
+      - utm  # version not pinned in the original run
+      - pytz  # version not pinned in the original run
+      - esda  # version not pinned in the original run
+      - libpysal  # version not pinned in the original run
+      - mgwr  # version not pinned in the original run
+      - spreg  # version not pinned in the original run
+      - matplotlib  # version not pinned in the original run
+      - seaborn  # version not pinned in the original run
+      - networkx  # version not pinned in the original run
+      - tqdm  # version not pinned in the original run
+      - pyyaml  # version not pinned in the original run
+      - requests  # version not pinned in the original run
+      - python-dotenv  # version not pinned in the original run
+      - openeo  # version not pinned in the original run
+      - openeo-gfmap  # version not pinned in the original run
+      # worldcereal: version not pinned in the original run; install from source
+      # (https://github.com/WorldCereal/worldcereal-classification) in a Python 3.11 env.

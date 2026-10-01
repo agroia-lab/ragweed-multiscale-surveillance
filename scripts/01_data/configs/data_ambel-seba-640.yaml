@@ -1,0 +1,13 @@
+# AMBEL (Ambrosia artemisiifolia) Single-Class Detection Dataset
+# Source: Roboflow (albertopractica/ambrosia.sta.rosa v1)
+# Images: 640x640, 2065 total
+# License: CC BY 4.0
+
+path: data/ambrosia.Seba
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names:
+  0: AMBEL

@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the preprint below."
+title: "ragweed-multiscale-surveillance: code and data sample for the ragweed multi-scale surveillance preprint"
+type: software
+license: AGPL-3.0-or-later
+authors:
+  - family-names: "León Gutiérrez"
+    given-names: "Lorenzo F."
+    email: lleon@inia.cl
+    orcid: "https://orcid.org/0000-0002-7626-2299"
+    affiliation: "Instituto de Investigaciones Agropecuarias (INIA), Chile"
+  - family-names: "Ramírez"
+    given-names: "Cristofer"
+    affiliation: "Instituto de Investigaciones Agropecuarias (INIA), Chile"
+  - family-names: "Henríquez"
+    given-names: "Alejandra"
+    affiliation: "Instituto de Investigaciones Agropecuarias (INIA), Chile"
+  - family-names: "Contreras"
+    given-names: "Sebastián"
+    affiliation: "Instituto de Investigaciones Agropecuarias (INIA), Chile"
+keywords:
+  - ragweed
+  - Ambrosia artemisiifolia
+  - weed detection
+  - YOLO
+  - SAHI
+  - domain shift
+  - Sentinel-2
+  - PRESTO
+  - geographically weighted regression
+preferred-citation:
+  type: article
+  title: "From Plant Detection to Satellite Mapping: A Multi-Scale AI Toolkit for Ragweed Surveillance under Climate Change"
+  authors:
+    - family-names: "León Gutiérrez"
+      given-names: "Lorenzo F."
+      orcid: "https://orcid.org/0000-0002-7626-2299"
+    - family-names: "Ramírez"
+      given-names: "Cristofer"
+    - family-names: "Henríquez"
+      given-names: "Alejandra"
+    - family-names: "Contreras"
+      given-names: "Sebastián"
+  journal: "bioRxiv"
+  year: 2026
+  doi: "10.64898/2026.09.28.755009"
+  url: "https://www.biorxiv.org/content/10.64898/2026.09.28.755009v1"

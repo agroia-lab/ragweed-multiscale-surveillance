@@ -1,0 +1,58 @@
+# Python 3.10.16
+# Versions below are those used for the runs reported in the preprint,
+# except where marked "# version not pinned in the original run".
+
+# --- Deep learning / detection ---------------------------------------------
+torch==2.4.1
+torchvision==0.19.1
+ultralytics==8.3.49
+sahi==0.11.19
+
+# --- Numerics / ML -----------------------------------------------------------
+numpy==1.26.4
+scipy==1.14.1
+scikit-learn==1.6.0
+umap-learn==0.5.11
+pandas  # version not pinned in the original run
+
+# --- Imaging -----------------------------------------------------------------
+opencv-python==4.9.0.80
+pillow  # version not pinned in the original run
+pillow-heif  # version not pinned in the original run
+piexif  # version not pinned in the original run
+exifread  # version not pinned in the original run (optional)
+
+# --- Geospatial --------------------------------------------------------------
+shapely==2.0.6
+rasterio==1.4.3
+geopandas  # version not pinned in the original run
+fiona  # version not pinned in the original run
+pyproj  # version not pinned in the original run
+utm  # version not pinned in the original run
+pytz  # version not pinned in the original run
+
+# --- Spatial statistics (stage 06) -------------------------------------------
+esda  # version not pinned in the original run
+libpysal  # version not pinned in the original run
+mgwr  # version not pinned in the original run
+spreg  # version not pinned in the original run
+
+# --- Visualisation -----------------------------------------------------------
+plotly==6.5.2
+matplotlib  # version not pinned in the original run
+seaborn  # version not pinned in the original run
+networkx  # version not pinned in the original run
+
+# --- Utilities ---------------------------------------------------------------
+tqdm  # version not pinned in the original run
+pyyaml  # version not pinned in the original run
+requests  # version not pinned in the original run
+python-dotenv  # version not pinned in the original run (optional)
+
+# --- Satellite embeddings (stage 06, PRESTO) ---------------------------------
+openeo  # version not pinned in the original run (extract_presto_embeddings.py documents openeo==0.35.0)
+openeo-gfmap  # version not pinned in the original run (extract_presto_embeddings.py documents openeo-gfmap==0.4.7)
+# worldcereal  # version not pinned in the original run.
+#   Install from a local clone of https://github.com/WorldCereal/worldcereal-classification
+#   with `pip install -e . --no-deps`, in a separate Python 3.11 environment
+#   (see the header of scripts/06_satellite/extract_presto_embeddings.py).

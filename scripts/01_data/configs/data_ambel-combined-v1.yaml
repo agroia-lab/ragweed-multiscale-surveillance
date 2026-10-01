@@ -1,0 +1,16 @@
+# AMBEL (Ambrosia artemisiifolia) Combined Dataset — Alberto + Lentejas
+# Sources:
+#   - Alberto (albertopractica/ambosia_sr1 v1): 659 images, 1344x1008 native
+#   - Lentejas (peppo-4-rotaciones/ambrosia-lentejas-seba-0rdlg v1): 4955 images, ~1050x915 native
+# Total: 5614 images, 41057 annotations
+# Single-class: AMBEL (class 0)
+# License: CC BY 4.0
+
+path: data/ambel_combined_v1
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names:
+  0: AMBEL

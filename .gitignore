@@ -1,0 +1,15 @@
+outputs/
+runs/
+weights/
+*.pt
+__pycache__/
+*.pyc
+.DS_Store
+.env
+*_original
+
+# Local datasets go under data/; only the sample and its docs are tracked
+data/*
+!data/README.md
+!data/LICENSE
+!data/sample/

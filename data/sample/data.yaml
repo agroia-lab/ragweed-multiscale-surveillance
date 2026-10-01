@@ -1,0 +1,27 @@
+# 12-image sample of the Roboflow export dlm2lencu / merge-2to11 v5
+# (2048x2048, 4 classes, YOLO format). License: CC BY 4.0 (see data/LICENSE).
+# The sample is meant for smoke tests and inference demos, not for training:
+# train/val/test all point to the same 12 images.
+#
+# Note: Ultralytics resolves a relative `path` against its `datasets_dir`
+# setting. Run `yolo settings datasets_dir=$(pwd)` from the repository root,
+# or replace `path` with an absolute path.
+
+path: data/sample
+train: images
+val: images
+test: images
+
+nc: 4
+names:
+- AMBEL
+- LENCU
+- POLAV
+- POLPE
+
+roboflow:
+  license: CC BY 4.0
+  project: merge-2to11
+  url: https://universe.roboflow.com/dlm2lencu-o0fxa/merge-2to11/dataset/5
+  version: 5
+  workspace: dlm2lencu-o0fxa
