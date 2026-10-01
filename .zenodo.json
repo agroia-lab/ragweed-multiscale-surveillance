@@ -1,0 +1,18 @@
+{
+  "upload_type": "software",
+  "title": "ragweed-multiscale-surveillance: code and data sample for the ragweed multi-scale surveillance preprint",
+  "description": "Original analysis scripts (YOLOv11 training, SAHI inference, cross-domain evaluation, domain-shift embeddings, Sentinel-1/2 PRESTO embeddings, Moran's I/LISA and GWR) and a 32-image annotated sample for the preprint 'From Plant Detection to Satellite Mapping: A Multi-Scale AI Toolkit for Ragweed Surveillance under Climate Change' (bioRxiv, doi:10.64898/2026.09.28.755009). Code licensed AGPL-3.0-or-later; data sample CC BY 4.0.",
+  "license": "AGPL-3.0-or-later",
+  "access_right": "open",
+  "language": "eng",
+  "creators": [
+    {"name": "León Gutiérrez, Lorenzo F.", "affiliation": "Instituto de Investigaciones Agropecuarias (INIA)", "orcid": "0000-0002-7626-2299"},
+    {"name": "Ramírez, Cristofer", "affiliation": "Instituto de Investigaciones Agropecuarias (INIA)"},
+    {"name": "Henríquez, Alejandra", "affiliation": "Instituto de Investigaciones Agropecuarias (INIA)"},
+    {"name": "Contreras, Sebastián", "affiliation": "Instituto de Investigaciones Agropecuarias (INIA)"}
+  ],
+  "keywords": ["ragweed", "Ambrosia artemisiifolia", "weed detection", "YOLO", "SAHI", "domain shift", "Sentinel-2", "PRESTO", "geographically weighted regression"],
+  "related_identifiers": [
+    {"identifier": "10.64898/2026.09.28.755009", "relation": "isSupplementTo", "resource_type": "publication-preprint", "scheme": "doi"}
+  ]
+}
